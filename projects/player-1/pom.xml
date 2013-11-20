@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>orst.stratagusai</groupId>
+    <artifactId>stratctlr</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <stratplanVersion>2.0-SNAPSHOT</stratplanVersion>
+        <tacmanVersion>1.0-SNAPSHOT</tacmanVersion>
+        <prodmanVersion>2.0-SNAPSHOT</prodmanVersion>
+        <clientVersion>3.0-SNAPSHOT</clientVersion>
+
+        <snakeyamlVersion>1.7</snakeyamlVersion>
+        <antlrPluginVersion>3.1.3-1</antlrPluginVersion>
+        <antlrVersion>3.1.3</antlrVersion>
+        <jungVersion>2.0.1</jungVersion>
+        <log4jVersion>1.2.14</log4jVersion>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <!-- compile generics -->
+                <configuration>
+                    <source>1.5</source>
+                    <target>1.5</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <!-- produce project dependency diagrams -->
+                <groupId>ch.elca.el4j.maven.plugins</groupId>
+                <artifactId>maven-depgraph-plugin</artifactId>
+                <version>1.7</version>
+                <configuration>
+                                <!-- outDir>target</outDir -->
+                    <outFile>dependency-graph.png</outFile>
+                </configuration>
+
+            </plugin>
+        </plugins>
+    </build>
+
+
+    <repositories>
+        <repository>
+            <id>Sonatype-public</id>
+            <name>SnakeYAML repository</name>
+            <url>http://oss.sonatype.org/content/groups/public/</url>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <!-- EL4J dependency diagrams.  Requires GraphViz.
+                 type "mvn depgraph:depgraph" or "mvn depgraph:fullgraph"
+                 To show just the orst projects, type
+                 
+                 mvn depgraph:fullgraph -Ddepgraph.groupFilter="(orst)"
+            -->
+            <id>elca-services</id>
+            <url>http://el4.elca-services.ch/el4j/maven2repository</url>
+            <releases>
+             <enabled>true</enabled>
+            </releases>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>${log4jVersion}</version>
+        </dependency>
+        <dependency>
+            <!-- read and write YAML format files. -->
+            <groupId>org.yaml</groupId>
+            <artifactId>snakeyaml</artifactId>
+            <version>${snakeyamlVersion}</version>
+        </dependency>
+    </dependencies>
+
+    <modules>
+        <module>../../../projects/stratplan/trunk</module>
+        <!-- module>../stratagent/tac-h</module -->
+        <!-- module>../../../projects/stratagent/tac-olpomdp</module -->
+	<module>../../../projects/stratctlr/tac-lp</module>
+        <module>../../../projects/stratctlr/prod-h</module>
+        <module>../../../projects/stratsim</module>
+        <module>../../../client/trunk</module>
+  </modules>
+    <name>stractlr</name>
+</project>

@@ -1,0 +1,16 @@
+@echo off
+
+call ..\..\..\tools\classpaths
+
+echo write strategy definition table...
+java -ea -classpath %CP% orst.stratagusai.stratsim.planner.SwitchingPlanner
+
+echo Write simulation game matrix...
+echo Run time approx. 1 minute 25 seconds...
+java -ea -classpath %CP% orst.stratagusai.stratsim.analysis.WriteSimMatrix %*
+
+REM echo Write switching planner vs. fixed stategy simulation game matrix...
+REM echo Run of 2 MatrixPlanners with 14 strategies on 1 map takes 2 hours...
+REM output
+java -ea -classpath %CP% orst.stratagusai.stratsim.analysis.SwitchingPlannerSimulation %*
+
