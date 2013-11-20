@@ -1,0 +1,66 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <groupId>orst.stratagusai</groupId>
+    <artifactId>stratctlr</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>orst.stratagusai</groupId>
+  <artifactId>tac-lp</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>tac-lp</name>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <build>
+        <plugins>
+            <plugin>
+                <!-- set compiler to Java 1.5 source -->
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.5</source>
+                    <target>1.5</target>
+                </configuration>
+            </plugin>
+        </plugins>
+  </build>
+
+  <dependencies>
+    <dependency>
+        <!-- basic game engine API -->
+        <groupId>orst.stratagusai</groupId>
+        <artifactId>stratagusai-client</artifactId>
+        <version>3.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+        <!-- strategy planner -->
+        <groupId>orst.stratagusai</groupId>
+        <artifactId>stratplan</artifactId>
+        <version>${stratplanVersion}</version>
+    </dependency>
+    <dependency>
+        <!-- linear program solver -->
+        <groupId>org.gnu.glpk</groupId>
+        <artifactId>glpk-java</artifactId>
+        <version>4.45</version>
+    </dependency>
+    <dependency>
+        <!-- vectors and vector operations -->
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-math</artifactId>
+        <version>2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
