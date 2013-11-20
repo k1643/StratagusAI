@@ -1,0 +1,43 @@
+
+Stratagus engine 2.2.4 code.
+
+http://stratagus.sourceforge.net
+
+Building on Ubuntu:
+
+  sudo apt-get install liblua5.1-dev
+
+  ./autogen.sh
+  ./configure
+  make depend && make
+
+Building on Windows with MingGW:
+
+
+1. Install the MingGW version of SDL development library
+ 
+	http://www.libsdl.org/release/
+		SDL-devel-1.2.14-mingw32.tar.gz
+	"make native" installs /usr/bin/sdl-config (c:\MSYS\1.0\usr\bin\...)
+
+2. Install MSYS
+	perl
+	autoconf
+  	automake
+    	libtool
+
+2. in MSYS shell run ./configure
+	
+	./configure --with-extra-includes=include \
+                    --with-extra-libs=lib \
+                    --with-bzip2=no
+3. make
+
+lib/SDLmain.lib(./Release/SDL_win32_main.obj):C:\public_cvs\SDL-:(.text[_main]+0
+x0): multiple definition of `main'
+c:/mingw/bin/../lib/gcc/mingw32/4.4.0/../../../libmingw32.a(main.o):main.c:(.tex
+t+0x0): first defined here
+c:/mingw/bin/../lib/gcc/mingw32/4.4.0/../../../../mingw32/bin/ld.exe: cannot fin
+d -lpng
+collect2: ld returned 1 exit status
+make: *** [stratagus] Error 1f
