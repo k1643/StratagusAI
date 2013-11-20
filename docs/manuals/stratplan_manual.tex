@@ -1,0 +1,56 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage[pdftex]{graphicx}
+\usepackage{url}
+
+\title{StratagusAI Manual}
+\date{Sep. 6, 2011}
+\author{Brian King}
+
+\begin{document}
+\maketitle
+
+\section*{Introduction}
+The StratagusAI project contains Java projects that form a modular game player for the Stratagus game engine.  This manual describes 
+some of the tools needed to build a Stratagus client in StratagusAI.
+
+\section*{Tools}
+
+\subsection*{Maven Build System}
+StratagusAI Java projects are built using the Maven is a build tool.  In Maven, a developer declares the properties of a Java project and its dependencies 
+on Java code libraries (JAR files) in a Project Object Model (\verb+pom.xml+) file.  One of the most useful features of Maven is its ability to 
+download 3rd party JAR files from an online repository.
+
+Maven is available at \url{http://http://maven.apache.org/download.html}.
+
+\subsection*{GLPK (Gnu Linear Programming Kit)}
+
+The tac-lp tactical combat module assigns combat units to targets by solving a linear program. The solver is GLPK (Gnu Linear Programming Kit),
+which is a binary executable that can be called from Java using a GLPK JAR.  The binary and the JAR have to be installed manually.
+
+GLPK can be found at \verb+http://ftp.gnu.org/gnu/glpk/+.  On Windows copy \verb+glpk_4_45.dll+ and \verb+glpk_4_45_java.dll+
+to \verb+C:\Windows\System32+. Install the Java JAR using
+
+\begin{verbatim}
+mvn install:install-file -DgroupId=org.gnu.glpk \
+         -DartifactId=glpk-java -Dversion=4.45 \
+         -Dpackaging=jar -Dfile=glpk-java.jar
+\end{verbatim}
+
+After the executable library and JAR are installed, you can include GLPK in a Java project with the following entry in the Maven \verb+pom.xml+ file:
+
+\begin{verbatim}
+    <dependency>
+        <!-- linear program solver -->
+        <groupId>org.gnu.glpk</groupId>
+        <artifactId>glpk-java</artifactId>
+        <version>4.45</version>
+    </dependency>
+    ...
+\end{verbatim}
+
+\section*{High-level Modules}
+
+\section*{Implementation Modules}
+
+\end{document}
