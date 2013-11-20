@@ -1,0 +1,21 @@
+[Id: 0 ownerId: 15 Type: 11 Loc: (0,2) maxHP: 25500 currHP: 25500 rAmount: 40000 kills: 0 target -1 status: STAND statusArgs: (0,-1)]
+[Id: 1 ownerId: 0 Type: 24 Loc: (3,7) maxHP: 30 currHP: 30 rAmount: 0 kills: 0 target -1 status: STAND statusArgs: (1,-1)]
+[Id: 3 ownerId: 15 Type: 11 Loc: (3,22) maxHP: 25500 currHP: 25500 rAmount: 55000 kills: 0 target -1 status: STAND statusArgs: (3,-1)]
+[Id: 2 ownerId: 15 Type: 11 Loc: (61,10) maxHP: 25500 currHP: 25500 rAmount: 30000 kills: 0 target -1 status: STAND statusArgs: (2,-1)]
+[Id: 4 ownerId: 15 Type: 11 Loc: (21,33) maxHP: 25500 currHP: 25500 rAmount: 55000 kills: 0 target -1 status: STAND statusArgs: (4,-1)]
+[Id: 5 ownerId: 1 Type: 24 Loc: (8,50) maxHP: 30 currHP: 30 rAmount: 0 kills: 0 target -1 status: STAND statusArgs: (5,-1)]
+[Id: 7 ownerId: 15 Type: 11 Loc: (5,54) maxHP: 25500 currHP: 25500 rAmount: 40000 kills: 0 target -1 status: STAND statusArgs: (7,-1)]
+[Id: 6 ownerId: 15 Type: 11 Loc: (61,50) maxHP: 25500 currHP: 25500 rAmount: 30000 kills: 0 target -1 status: STAND statusArgs: (6,-1)]
+ TTTTTTTTTTTT
+   T        T
+    0        
+#         #  
+  ###   #    
+######### #  
+###  ###  ## 
+# #  ## #####
+      #  ## #
+   1    #    
+             
+TTTTTTT    TT
+TTTTTTTTTTTTT

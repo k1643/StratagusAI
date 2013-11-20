@@ -1,0 +1,79 @@
+
+Production Unit Growth
+
+----------------------
+
+
+
+Production UnitGroups automatically increase hitpoints at a rate of
+
+0.7 hitpoints every cycle.  
+0.7 is close to the hitpoints/(production time) for 
+the production units townhall, 
+barracks, elven lumber mill, and blacksmith 
+needed to produce low-level combat 
+units (implemented in Simulator.java).
+
+
+
+Unit Production Rate
+
+--------------------
+
+
+A production UnitGroup has to pass a threshold amount of hitpoints to begin
+
+unit production.  The threshold depends on the unit to be produced.
+
+	"unit-peasant", 1200		 // assume townhall
+	"unit-footman", 1200+800	 // assume townhall and barracks
+	"unit-archer", 1200+800+600      // assume townhall, barracks, lumber
+ 
+					 //	mill
+       
+ "unit-knight", 1200+800+775+500  // assume townhall, barracks,
+ 
+					 // 	blacksmith, stables
+	"unit-town-hall", 30		 // assume peasant
+
+(see ActionProduce.java)
+
+
+
+Once the production UnitGroup passes the hitpoint threshold, we assume all the
+
+prerequisites for a unit a present, and new units are produced at the rate
+
+specified in units.lua (See build_requirements.yaml).
+
+
+
+Examples:
+
+
+	"unit-peasant"	270
+
+	"unit-archer"	420
+
+
+TODO: double the rate after passing a second threshold of production UnitGroup
+
+      strength.
+	
+
+Movement calculations.
+
+----------------------
+
+src\map\tileset.cpp(55):int TileSizeX = 32;
+
+        // from scripts/human/units.lua:
+        //
+        // unit             Speed
+        // unit-peasant     10
+        // unit-knight      13
+        // unit-archer      10
+        // unit-footman     10
+        // unit-ballista     5
+
+

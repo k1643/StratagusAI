@@ -1,0 +1,210 @@
+#
+# one-way-in-one-way-out game map with 2 bases established for each
+# player.
+#
+#
+(:GameState :cycle 0
+  (:player :id 0 :gold 40000 :oil 40000 :wood 40000 :supply 58 :demand 2)
+  (:player :id 1 :gold 40000 :oil 40000 :wood 40000 :supply 58 :demand 2)
+  (:GameMap     
+    (:cells 
+      'TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT'
+      'TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT'
+      '0000TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT0TTTTT00TTTTTTTTTTTTT'
+      '000000TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT00TTT0TTTT000000TTTTTTTTTT'
+      '00000000TTTTTTTTTTTTTTTTTTTTT0000TTTTT0000TTTTT0000000000TTTTTTT'
+      '000000000TTTTTTTTTTT0TTTT00000000TTTTTT000TTTTT000000000000TTTTT'
+      '000000000TTT00TTTTTT0TTT00000000000TTTT0000TT000000000000000TTTT'
+      '0000000000TT000TTTT00000000000000000TTT0000000000000000000000TTT'
+      '0000000000000000000000000000000000000000000000000000000000000TTT'
+      '00000000000000000000000000000000000000000000000000000000000000TT'
+      '0000000000000000000000000000000000000000000000000000000000000000'
+      '0000000000000000000000000000000000000000000000000000000000000000'
+      '0000000000000000000000000000000000000000000000000000000000000000'
+      '00000000000000000000000000000000000000000000000######00000000000'
+      '000000000000000000000000000000000000000000000##########000000000'
+      '0###0000000000000000000000000000000000000000###########000000000'
+      '####0000000000000000000000000000000000000000#####00#####00000000'
+      '####000000000000000000000000000000000000000000000000#####0000000'
+      '####000000###0000000000000000000000000000000000000000####0000000'
+      '###00000#######0000000000000000000000000000000000000000##0000000'
+
+      '##00000##########00###0000000000000000000000####0000000000000000'
+
+      '#000000###0############0000000000000000000######0000000000000000'
+
+      '000000000000############000000000000000000#####000000000000##000'
+
+      '0000000000000###########00000000000000000#####000000##0000###000'
+
+      '##000000000###############0000000000##00######0000#####00####000'
+
+      '##0000000##################0000000####00#####0000######00###0000'
+
+      '####0000#####################000#############000######0000000000'
+
+      '#####0#####################################00000#######000000000'
+
+      '#########################################000000########000000000'
+
+      '#################000####################0000000#########00000000'
+
+      '################000000##################00000000########00000000'
+
+      '#############0000000000################0000000000#####00###00000'
+
+      '############0000000000000##############0000000000#####00####0000'
+
+      '############0000##0000000###########00000000000000####00####0000'
+
+      '#############0####0000000##########000000000000000######0#######'
+
+      '##################0000000########00000000##00000000#############'
+
+      '#####000#########00000000#######000###000####00000##############'
+
+      '####000000#####00000000000#######00###000######0################'
+
+      '##000000000000000000000000#######00##00000######################'
+
+      '000000000000000000000000000#######000000000#####################'
+
+      '0000000000000000000000000000########00000000####################'
+
+      '00000000000000000000000000000#########0000000###########00######'
+
+      '0000000000000000000000000000000#######000000000#######000000####'
+
+      '00000000000000000000000000000000######00000000000###000000000###'
+
+      '000000000000000000000000000000000000000000###00000000000000000##'
+
+      '00000000000000000000000000000000000000000####0000000000000000000'
+
+      '00000000000000000000000000000000000000000###00000000000000000000'
+
+      '0000000000000000000000000000000000000000###000000000000000000000'
+
+      '0000000000000000000000000000000000000000###000000000000000000000'
+
+      '0000000000000000000000000000000000000000000000000000000000000000'
+
+      '0000000000000000000000000000000000000000000000000000000000000000'
+
+      '0000000000000000000000000000000000000000000000000000000000000000'
+
+      '0000000000000000000000000000000000000000000000000000000000000000'
+
+      'TT000000000000000000000000000TTT000000000000000000000000000000TT'
+
+      'TT00000000000TTTT00000000000TTTT0000000000000000000000000000TTTT'
+
+      'TTTT000000TTTTTTT0000000TTTTTTTT00000000000000000000000TT0TTTTTT'
+
+      'TTTTT000TTTTTTTTT0000000TTTTTTTT0000000000000000000000TTTTTTTTTT'
+
+      'TTTTTTTTTTTTTTTT00TTTT0TTTTTTTTT0000000000000000TT0000TTTTTTTTTT'
+
+      'TTTTTTTTTTTTT00000TTTTTTTTTTTTTT0TTT0000000000TTTTT000TTTTTTTTTT'
+
+      'TTTTTTTTTTTT0TTT0TTTTTTTTTTTTTTTTTTTT00000000TTTTTTTTTTTTTTTTTTT'
+
+      'TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT0000TTT0TTTTTTTTTTTTTTTTTTT'
+
+      'TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT0TTTTTTTTTTTTTTTTTTTTTTTTTT'
+
+      'TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT'
+
+      'TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT'
+
+    )
+    
+    (:Region :id 1 :center (20 14) (0 0 40 27))
+    (:Region :id 2 :center (52 12) (41 0 63 23))
+    (:Region :id 3 :center (46 26) (39 28 51 32) (41 24 51 27))
+    (:Region :id 4 :center (41 38) (31 33 51 42))
+    (:Region :id 5 :center (58 29) (52 24 63 34))
+    (:Region :id 6 :center (58 42) (52 41 63 42))
+    (:Region :id 7 :center (15 46) (0 28 30 63))
+    (:Region :id 8 :center (47 53) (31 43 63 63))
+    (:connections
+
+       (:PassageNode :id 1 (41 14))
+       (:PassageNode :id 2 (48 23))
+       (:PassageNode :id 3 (44 30))
+       (:PassageNode :id 4 (44 33))
+       (:PassageNode :id 5 (42 42))
+       (:PassageNode :id 6 (57 42))
+       (:PassageNode :id 7 (31 48))
+
+      (:Passage :regionNode 8 :passageNode 6)
+      (:Passage :regionNode 6 :passageNode 6)
+      (:Passage :regionNode 3 :passageNode 4)
+      (:Passage :regionNode 2 :passageNode 2)
+      (:Passage :regionNode 5 :passageNode 3)
+      (:Passage :regionNode 8 :passageNode 5)
+      (:Passage :regionNode 7 :passageNode 7)
+      (:Passage :regionNode 3 :passageNode 2)
+      (:Passage :regionNode 2 :passageNode 3)
+      (:Passage :regionNode 4 :passageNode 4)
+      (:Passage :regionNode 1 :passageNode 1)
+      (:Passage :regionNode 2 :passageNode 1)
+      (:Passage :regionNode 8 :passageNode 7)
+      (:Passage :regionNode 4 :passageNode 5)
+
+    )
+  
+  )
+  (:units
+    (:Unit :unitId 0 :ownerId 15 :RAmount 40000 :CurrentTarget -1 :HitPoints 25500 :LocX 0 :LocY 2 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 0 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 11 :UnitTypeString unit-gold-mine)
+    (:Unit :unitId 1 :ownerId 15 :RAmount 40000 :CurrentTarget -1 :HitPoints 25500 :LocX 5 :LocY 54 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 11 :UnitTypeString unit-gold-mine)
+    (:Unit :unitId 2 :ownerId 15 :RAmount 30000 :CurrentTarget -1 :HitPoints 25500 :LocX 61 :LocY 10 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 2 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 11 :UnitTypeString unit-gold-mine)
+    (:Unit :unitId 3 :ownerId 15 :RAmount 55000 :CurrentTarget -1 :HitPoints 25500 :LocX 3 :LocY 22 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 3 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 11 :UnitTypeString unit-gold-mine)
+    (:Unit :unitId 4 :ownerId 15 :RAmount 55000 :CurrentTarget -1 :HitPoints 25500 :LocX 21 :LocY 33 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 4 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 11 :UnitTypeString unit-gold-mine)
+    (:Unit :unitId 5 :ownerId 15 :RAmount 30000 :CurrentTarget -1 :HitPoints 25500 :LocX 61 :LocY 50 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 5 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 11 :UnitTypeString unit-gold-mine)
+    (:Unit :unitId 6 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 1200 :LocX 0 :LocY 9 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 6 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 57 :UnitTypeString unit-town-hall)
+    (:Unit :unitId 7 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 800 :LocX 5 :LocY 9 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 7 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 48 :UnitTypeString unit-human-barracks)
+    (:Unit :unitId 8 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 600 :LocX 6 :LocY 12 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 8 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 55 :UnitTypeString unit-elven-lumber-mill)
+    (:Unit :unitId 9 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 8 :LocY 7 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 9 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 10 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 9 :LocY 10 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 10 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 11 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 9 :LocY 12 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 11 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 12 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 9 :LocY 14 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 12 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 13 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 11 :LocY 9 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 13 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 14 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 11 :LocY 11 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 14 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 15 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 11 :LocY 13 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 15 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 17 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 1200 :LocX 53 :LocY 7 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 17 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 57 :UnitTypeString unit-town-hall)
+    (:Unit :unitId 16 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 30 :LocX 0 :LocY 8 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 16 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 24 :UnitTypeString unit-peasant)
+    (:Unit :unitId 19 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 600 :LocX 50 :LocY 7 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 19 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 55 :UnitTypeString unit-elven-lumber-mill)
+    (:Unit :unitId 18 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 800 :LocX 47 :LocY 7 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 18 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 48 :UnitTypeString unit-human-barracks)
+    (:Unit :unitId 21 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 45 :LocY 9 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 21 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 20 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 45 :LocY 7 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 20 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 23 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 47 :LocY 10 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 23 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 22 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 44 :LocY 11 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 22 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 25 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 56 :LocY 13 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 25 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 24 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 54 :LocY 11 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 24 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 27 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 30 :LocX 58 :LocY 12 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 27 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 24 :UnitTypeString unit-peasant)
+    (:Unit :unitId 26 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 56 :LocY 11 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 26 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 29 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 600 :LocX 0 :LocY 44 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 29 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 55 :UnitTypeString unit-elven-lumber-mill)
+    (:Unit :unitId 28 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 1200 :LocX 0 :LocY 47 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 28 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 57 :UnitTypeString unit-town-hall)
+    (:Unit :unitId 31 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 5 :LocY 49 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 31 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 30 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 800 :LocX 0 :LocY 41 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 30 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 48 :UnitTypeString unit-human-barracks)
+    (:Unit :unitId 34 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 5 :LocY 43 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 34 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 35 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 7 :LocY 49 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 35 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 32 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 5 :LocY 47 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 32 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 33 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 5 :LocY 45 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 33 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 38 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 30 :LocX 2 :LocY 51 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 38 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 24 :UnitTypeString unit-peasant)
+    (:Unit :unitId 39 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 1200 :LocX 54 :LocY 50 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 39 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 57 :UnitTypeString unit-town-hall)
+    (:Unit :unitId 36 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 7 :LocY 47 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 36 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 37 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 7 :LocY 45 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 37 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 42 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 45 :LocY 50 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 42 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 43 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 45 :LocY 52 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 43 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 40 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 600 :LocX 51 :LocY 51 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 40 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 55 :UnitTypeString unit-elven-lumber-mill)
+    (:Unit :unitId 41 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 800 :LocX 48 :LocY 51 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 41 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 48 :UnitTypeString unit-human-barracks)
+    (:Unit :unitId 46 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 49 :LocY 49 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 46 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 47 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 51 :LocY 49 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 47 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 44 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 45 :LocY 54 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 44 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 45 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 45 :LocY 56 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 45 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 49 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 30 :LocX 58 :LocY 53 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 49 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 24 :UnitTypeString unit-peasant)
+    (:Unit :unitId 48 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 53 :LocY 48 :Armor 0 :Damage 2 :PiercingDmg 3 :Status 1 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg1 48 :Armor 0 :Damage 2 :PiercingDmg 3 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+  )
+)

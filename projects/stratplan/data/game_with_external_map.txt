@@ -1,0 +1,14 @@
+#
+#
+(:GameState :cycle 0
+  (:player :id 0 :gold 40000 :oil 40000 :wood 40000 :supply 58 :demand 2)
+  (:player :id 1 :gold 40000 :oil 40000 :wood 40000 :supply 58 :demand 2)
+  (:GameMap :resource 'one-way-map.txt')
+  (:units
+     (:Unit :unitId 1 :ownerId 0 :RAmount 40000 :HitPoints 25500
+           :LocX 2 :LocY 2
+           :Armor 20 :Damage 3 :PiercingDmg 0
+           :Status 3 :StatusArg1 -2
+           :StatusArg2 0 :Type 11 :UnitTypeString unit-gold-mine)
+  )
+)

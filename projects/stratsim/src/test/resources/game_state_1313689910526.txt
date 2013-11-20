@@ -1,0 +1,233 @@
+(:GameState :cycle 12060
+  (:player :id 10 :gold 0 :oil 0 :wood 0 :supply 0 :demand 0)
+  (:player :id 12 :gold 0 :oil 0 :wood 0 :supply 0 :demand 0)
+  (:player :id 9 :gold 0 :oil 0 :wood 0 :supply 0 :demand 0)
+  (:player :id 11 :gold 0 :oil 0 :wood 0 :supply 0 :demand 0)
+  (:player :id 3 :gold 0 :oil 0 :wood 0 :supply 0 :demand 0)
+  (:player :id 15 :gold 0 :oil 0 :wood 0 :supply 0 :demand 0)
+  (:player :id 13 :gold 0 :oil 0 :wood 0 :supply 0 :demand 0)
+  (:player :id 5 :gold 0 :oil 0 :wood 0 :supply 0 :demand 0)
+  (:player :id 1 :gold 23300 :oil 40000 :wood 39600 :supply 58 :demand 2)
+  (:player :id 7 :gold 0 :oil 0 :wood 0 :supply 0 :demand 0)
+  (:player :id 2 :gold 0 :oil 0 :wood 0 :supply 0 :demand 0)
+  (:player :id 6 :gold 0 :oil 0 :wood 0 :supply 0 :demand 0)
+  (:player :id 0 :gold 9600 :oil 40000 :wood 39000 :supply 58 :demand 23)
+  (:player :id 8 :gold 0 :oil 0 :wood 0 :supply 0 :demand 0)
+  (:player :id 14 :gold 0 :oil 0 :wood 0 :supply 0 :demand 0)
+  (:player :id 4 :gold 0 :oil 0 :wood 0 :supply 0 :demand 0)
+  (:GameMap
+    (:cells
+      'TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT'
+      'TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT'
+      '0000TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT0TTTTT00TTTTTTTTTTTTT'
+      '000000TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT00TTT0TTTT000000TTTTTTTTTT'
+      '00000000TTTTTTTTTTTTTTTTTTTTT0000TTTTT0000TTTTT0000000000TTTTTTT'
+      '000000000TTTTTTTTTTT0TTTT00000000TTTTTT000TTTTT000000000000TTTTT'
+      '000000000TTT00TTTTTT0TTT00000000000TTTT0000TT000000000000000TTTT'
+      '0000000000TT000TTTT00000000000000000TTT0000000000000000000000TTT'
+      '0000000000000000000000000000000000000000000000000000000000000TTT'
+      '00000000000000000000000000000000000000000000000000000000000000TT'
+      '0000000000000000000000000000000000000000000000000000000000000000'
+      '0000000000000000000000000000000000000000000000000000000000000000'
+      '0000000000000000000000000000000000000000000000000000000000000000'
+      '00000000000000000000000000000000000000000000000######00000000000'
+      '000000000000000000000000000000000000000000000##########000000000'
+      '0###0000000000000000000000000000000000000000###########000000000'
+      '####0000000000000000000000000000000000000000#####00#####00000000'
+      '####000000000000000000000000000000000000000000000000#####0000000'
+      '####000000###0000000000000000000000000000000000000000####0000000'
+      '###00000#######0000000000000000000000000000000000000000##0000000'
+      '##00000##########00###0000000000000000000000####0000000000000000'
+      '#000000###0############0000000000000000000######0000000000000000'
+      '000000000000############000000000000000000#####000000000000##000'
+      '0000000000000###########00000000000000000#####000000##0000###000'
+      '##000000000###############0000000000##00######0000#####00####000'
+      '##0000000##################0000000####00#####0000######00###0000'
+      '####0000#####################000#############000######0000000000'
+      '#####0#####################################00000#######000000000'
+      '#########################################000000########000000000'
+      '#################000####################0000000#########00000000'
+      '################000000##################00000000########00000000'
+      '#############0000000000################0000000000#####00###00000'
+      '############0000000000000##############0000000000#####00####0000'
+      '############0000##0000000###########00000000000000####00####0000'
+      '#############0####0000000##########000000000000000######0#######'
+      '##################0000000########00000000##00000000#############'
+      '#####000#########00000000#######000###000####00000##############'
+      '####000000#####00000000000#######00###000######0################'
+      '##000000000000000000000000#######00##00000######################'
+      '000000000000000000000000000#######000000000#####################'
+      '0000000000000000000000000000########00000000####################'
+      '00000000000000000000000000000#########0000000###########00######'
+      '0000000000000000000000000000000#######000000000#######000000####'
+      '00000000000000000000000000000000######00000000000###000000000###'
+      '000000000000000000000000000000000000000000###00000000000000000##'
+      '00000000000000000000000000000000000000000####0000000000000000000'
+      '00000000000000000000000000000000000000000###00000000000000000000'
+      '0000000000000000000000000000000000000000###000000000000000000000'
+      '0000000000000000000000000000000000000000###000000000000000000000'
+      '0000000000000000000000000000000000000000000000000000000000000000'
+      '0000000000000000000000000000000000000000000000000000000000000000'
+      '0000000000000000000000000000000000000000000000000000000000000000'
+      '0000000000000000000000000000000000000000000000000000000000000000'
+      'TT000000000000000000000000000TTT000000000000000000000000000000TT'
+      'TT00000000000TTTT00000000000TTTT0000000000000000000000000000TTTT'
+      'TTTT000000TTTTTTT0000000TTTTTTTT00000000000000000000000TT0TTTTTT'
+      'TTTTT000TTTTTTTTT0000000TTTTTTTT0000000000000000000000TTTTTTTTTT'
+      'TTTTTTTTTTTTTTTT00TTTT0TTTTTTTTT0000000000000000TT0000TTTTTTTTTT'
+      'TTTTTTTTTTTTT00000TTTTTTTTTTTTTT0TTT0000000000TTTTT000TTTTTTTTTT'
+      'TTTTTTTTTTTT0TTT0TTTTTTTTTTTTTTTTTTTT00000000TTTTTTTTTTTTTTTTTTT'
+      'TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT0000TTT0TTTTTTTTTTTTTTTTTTT'
+      'TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT0TTTTTTTTTTTTTTTTTTTTTTTTTT'
+      'TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT'
+      'TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT'
+    )
+    (:Region :id 1 :center (20 14) (0 0 40 27))
+    (:Region :id 2 :center (52 12) (41 0 63 23))
+    (:Region :id 3 :center (44 30) :chokepoint (39 28 51 32) (41 24 51 27))
+    (:Region :id 4 :center (39 39) :chokepoint (31 33 51 42))
+    (:Region :id 5 :center (58 29) (52 24 63 34))
+    (:Region :id 6 :center (58 42) (52 41 63 42))
+    (:Region :id 7 :center (15 46) (0 28 30 63))
+    (:Region :id 8 :center (47 53) (31 43 63 63))
+    (:connections
+      (:PassageNode :id 6 (57 42))
+      (:PassageNode :id 1 (41 14))
+      (:PassageNode :id 5 (42 42))
+      (:PassageNode :id 3 (63 23))
+      (:PassageNode :id 2 (48 23))
+      (:PassageNode :id 7 (31 48))
+      (:PassageNode :id 4 (44 33))
+      (:Passage :regionNode 1 :passageNode 1)
+      (:Passage :regionNode 8 :passageNode 7)
+      (:Passage :regionNode 8 :passageNode 6)
+      (:Passage :regionNode 2 :passageNode 2)
+      (:Passage :regionNode 8 :passageNode 5)
+      (:Passage :regionNode 7 :passageNode 7)
+      (:Passage :regionNode 2 :passageNode 3)
+      (:Passage :regionNode 5 :passageNode 3)
+      (:Passage :regionNode 3 :passageNode 2)
+      (:Passage :regionNode 3 :passageNode 4)
+      (:Passage :regionNode 2 :passageNode 1)
+      (:Passage :regionNode 6 :passageNode 6)
+      (:Passage :regionNode 4 :passageNode 4)
+      (:Passage :regionNode 4 :passageNode 5)
+    )
+  )
+  (:units
+    (:Unit :unitId 0 :ownerId 15 :RAmount 37000 :CurrentTarget -1 :HitPoints 25500 :LocX 0 :LocY 2 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 0 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 11 :UnitTypeString unit-gold-mine)
+    (:Unit :unitId 1 :ownerId 15 :RAmount 36700 :CurrentTarget -1 :HitPoints 25500 :LocX 5 :LocY 54 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 11 :UnitTypeString unit-gold-mine)
+    (:Unit :unitId 2 :ownerId 15 :RAmount 27000 :CurrentTarget -1 :HitPoints 25500 :LocX 61 :LocY 10 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 2 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 11 :UnitTypeString unit-gold-mine)
+    (:Unit :unitId 3 :ownerId 15 :RAmount 55000 :CurrentTarget -1 :HitPoints 25500 :LocX 3 :LocY 22 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 3 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 11 :UnitTypeString unit-gold-mine)
+    (:Unit :unitId 4 :ownerId 15 :RAmount 55000 :CurrentTarget -1 :HitPoints 25500 :LocX 21 :LocY 33 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 4 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 11 :UnitTypeString unit-gold-mine)
+    (:Unit :unitId 5 :ownerId 15 :RAmount 26800 :CurrentTarget -1 :HitPoints 25500 :LocX 61 :LocY 50 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 5 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 11 :UnitTypeString unit-gold-mine)
+    (:Unit :unitId 6 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 1200 :LocX 0 :LocY 9 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 6 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 57 :UnitTypeString unit-town-hall)
+    (:Unit :unitId 7 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 800 :LocX 5 :LocY 9 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 4 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 23 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 7 :Type 48 :UnitTypeString unit-human-barracks)
+    (:Unit :unitId 8 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 600 :LocX 6 :LocY 12 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 8 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 55 :UnitTypeString unit-elven-lumber-mill)
+    (:Unit :unitId 9 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 8 :LocY 7 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 9 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 10 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 9 :LocY 10 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 10 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 11 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 9 :LocY 12 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 11 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 12 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 9 :LocY 14 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 12 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 13 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 11 :LocY 9 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 13 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 14 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 11 :LocY 11 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 14 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 15 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 11 :LocY 13 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 15 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 17 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 1200 :LocX 53 :LocY 7 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 17 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 57 :UnitTypeString unit-town-hall)
+    (:Unit :unitId 16 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 30 :LocX 0 :LocY 2 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 7 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 16 :Type 24 :UnitTypeString unit-peasant)
+    (:Unit :unitId 19 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 600 :LocX 50 :LocY 7 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 19 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 55 :UnitTypeString unit-elven-lumber-mill)
+    (:Unit :unitId 18 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 800 :LocX 47 :LocY 7 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 4 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 23 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 18 :Type 48 :UnitTypeString unit-human-barracks)
+    (:Unit :unitId 21 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 45 :LocY 9 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 21 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 20 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 45 :LocY 7 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 20 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 23 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 47 :LocY 10 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 23 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 22 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 44 :LocY 11 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 22 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 25 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 56 :LocY 13 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 25 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 24 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 54 :LocY 11 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 24 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 27 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 30 :LocX 61 :LocY 10 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 7 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 27 :Type 24 :UnitTypeString unit-peasant)
+    (:Unit :unitId 26 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 56 :LocY 11 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 26 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 29 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 600 :LocX 0 :LocY 44 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 29 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 55 :UnitTypeString unit-elven-lumber-mill)
+    (:Unit :unitId 28 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 1200 :LocX 0 :LocY 47 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 28 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 57 :UnitTypeString unit-town-hall)
+    (:Unit :unitId 31 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 5 :LocY 49 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 31 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 30 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 800 :LocX 0 :LocY 41 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 30 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 30 :Type 48 :UnitTypeString unit-human-barracks)
+    (:Unit :unitId 34 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 5 :LocY 43 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 34 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 35 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 7 :LocY 49 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 35 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 32 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 5 :LocY 47 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 32 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 33 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 5 :LocY 45 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 33 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 38 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 30 :LocX 0 :LocY 47 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 7 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 38 :Type 24 :UnitTypeString unit-peasant)
+    (:Unit :unitId 39 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 1200 :LocX 54 :LocY 50 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 39 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 57 :UnitTypeString unit-town-hall)
+    (:Unit :unitId 36 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 7 :LocY 47 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 36 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 37 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 7 :LocY 45 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 37 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 42 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 45 :LocY 50 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 42 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 43 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 45 :LocY 52 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 43 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 40 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 600 :LocX 51 :LocY 51 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 40 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 55 :UnitTypeString unit-elven-lumber-mill)
+    (:Unit :unitId 41 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 800 :LocX 48 :LocY 51 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 41 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 41 :Type 48 :UnitTypeString unit-human-barracks)
+    (:Unit :unitId 46 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 49 :LocY 49 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 46 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 47 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 51 :LocY 49 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 47 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 44 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 45 :LocY 54 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 44 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 45 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 45 :LocY 56 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 45 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 49 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 30 :LocX 61 :LocY 50 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 7 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 49 :Type 24 :UnitTypeString unit-peasant)
+    (:Unit :unitId 48 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 400 :LocX 53 :LocY 48 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 48 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 47 :UnitTypeString unit-farm)
+    (:Unit :unitId 51 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 2 :LocX 45 :LocY 17 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 51 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 51 :Type 23 :UnitTypeString unit-footman)
+    (:Unit :unitId 50 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 0 :LocX 47 :LocY 17 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 9 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 50 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 50 :Type 15 :UnitTypeString unit-orc-dead-body)
+    (:Unit :unitId 53 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 0 :LocX 44 :LocY 43 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 9 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 53 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 53 :Type 15 :UnitTypeString unit-orc-dead-body)
+    (:Unit :unitId 52 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 0 :LocX 45 :LocY 17 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 9 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 52 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 52 :Type 15 :UnitTypeString unit-orc-dead-body)
+    (:Unit :unitId 55 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 60 :LocX 4 :LocY 12 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 55 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 55 :Type 23 :UnitTypeString unit-footman)
+    (:Unit :unitId 54 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 0 :LocX 38 :LocY 36 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 9 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 54 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 54 :Type 15 :UnitTypeString unit-orc-dead-body)
+    (:Unit :unitId 57 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 60 :LocX 3 :LocY 8 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 57 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 57 :Type 23 :UnitTypeString unit-footman)
+    (:Unit :unitId 56 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 0 :LocX 45 :LocY 42 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 9 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 56 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 56 :Type 15 :UnitTypeString unit-orc-dead-body)
+    (:Unit :unitId 59 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 0 :LocX 38 :LocY 38 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 9 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 59 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 59 :Type 15 :UnitTypeString unit-orc-dead-body)
+    (:Unit :unitId 58 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 0 :LocX 39 :LocY 36 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 9 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 58 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 58 :Type 15 :UnitTypeString unit-orc-dead-body)
+    (:Unit :unitId 61 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 0 :LocX 48 :LocY 17 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 9 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 61 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 61 :Type 15 :UnitTypeString unit-orc-dead-body)
+    (:Unit :unitId 60 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 0 :LocX 50 :LocY 18 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 9 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 60 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 60 :Type 15 :UnitTypeString unit-orc-dead-body)
+    (:Unit :unitId 63 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 0 :LocX 45 :LocY 13 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 9 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 63 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 63 :Type 15 :UnitTypeString unit-orc-dead-body)
+    (:Unit :unitId 62 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 0 :LocX 45 :LocY 18 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 9 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 62 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 62 :Type 15 :UnitTypeString unit-orc-dead-body)
+    (:Unit :unitId 64 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 40 :LocX 4 :LocY 10 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 64 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 64 :Type 28 :UnitTypeString unit-archer)
+    (:Unit :unitId 65 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 0 :LocX 41 :LocY 44 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 9 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 65 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 65 :Type 15 :UnitTypeString unit-orc-dead-body)
+    (:Unit :unitId 68 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 60 :LocX 4 :LocY 11 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 68 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 68 :Type 23 :UnitTypeString unit-footman)
+    (:Unit :unitId 69 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 0 :LocX 38 :LocY 39 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 9 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 69 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 69 :Type 15 :UnitTypeString unit-orc-dead-body)
+    (:Unit :unitId 66 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 0 :LocX 47 :LocY 17 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 9 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 66 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 66 :Type 15 :UnitTypeString unit-orc-dead-body)
+    (:Unit :unitId 67 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 6 :LocX 48 :LocY 17 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 0 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 67 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 67 :Type 28 :UnitTypeString unit-archer)
+    (:Unit :unitId 70 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 0 :LocX 40 :LocY 35 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 9 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 70 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 70 :Type 15 :UnitTypeString unit-orc-dead-body)
+    (:Unit :unitId 71 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 0 :LocX 45 :LocY 46 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 9 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 71 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 71 :Type 15 :UnitTypeString unit-orc-dead-body)
+    (:Unit :unitId 72 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 0 :LocX 45 :LocY 43 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 9 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 72 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 72 :Type 15 :UnitTypeString unit-orc-dead-body)
+    (:Unit :unitId 73 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 0 :LocX 47 :LocY 45 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 9 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 73 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 73 :Type 15 :UnitTypeString unit-orc-dead-body)
+    (:Unit :unitId 76 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 60 :LocX 5 :LocY 12 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 76 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 76 :Type 23 :UnitTypeString unit-footman)
+    (:Unit :unitId 77 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 0 :LocX 48 :LocY 18 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 9 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 77 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 77 :Type 15 :UnitTypeString unit-orc-dead-body)
+    (:Unit :unitId 74 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 60 :LocX 46 :LocY 6 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 74 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 74 :Type 23 :UnitTypeString unit-footman)
+    (:Unit :unitId 75 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 40 :LocX 4 :LocY 9 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 75 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 75 :Type 28 :UnitTypeString unit-archer)
+    (:Unit :unitId 78 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 53 :LocX 47 :LocY 17 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 78 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 78 :Type 23 :UnitTypeString unit-footman)
+    (:Unit :unitId 79 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 0 :LocX 41 :LocY 33 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 9 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 79 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 79 :Type 15 :UnitTypeString unit-orc-dead-body)
+    (:Unit :unitId 81 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 0 :LocX 45 :LocY 43 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 9 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 81 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 81 :Type 15 :UnitTypeString unit-orc-dead-body)
+    (:Unit :unitId 80 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 0 :LocX 44 :LocY 43 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 9 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 80 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 80 :Type 15 :UnitTypeString unit-orc-dead-body)
+    (:Unit :unitId 83 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 0 :LocX 43 :LocY 35 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 9 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 83 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 83 :Type 15 :UnitTypeString unit-orc-dead-body)
+    (:Unit :unitId 82 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 0 :LocX 45 :LocY 46 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 9 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 82 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 82 :Type 15 :UnitTypeString unit-orc-dead-body)
+    (:Unit :unitId 85 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 0 :LocX 42 :LocY 33 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 9 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 85 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 85 :Type 15 :UnitTypeString unit-orc-dead-body)
+    (:Unit :unitId 84 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 0 :LocX 42 :LocY 42 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 9 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 84 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 84 :Type 15 :UnitTypeString unit-orc-dead-body)
+    (:Unit :unitId 87 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 60 :LocX 8 :LocY 9 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 87 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 87 :Type 23 :UnitTypeString unit-footman)
+    (:Unit :unitId 86 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 11 :LocX 46 :LocY 18 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 0 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 86 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 86 :Type 23 :UnitTypeString unit-footman)
+    (:Unit :unitId 89 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 0 :LocX 41 :LocY 34 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 9 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 89 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 89 :Type 15 :UnitTypeString unit-orc-dead-body)
+    (:Unit :unitId 88 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 0 :LocX 43 :LocY 42 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 9 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 88 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 88 :Type 15 :UnitTypeString unit-orc-dead-body)
+    (:Unit :unitId 91 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 0 :LocX 40 :LocY 37 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 9 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 91 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 91 :Type 15 :UnitTypeString unit-orc-dead-body)
+    (:Unit :unitId 90 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 0 :LocX 45 :LocY 42 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 9 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 90 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 90 :Type 15 :UnitTypeString unit-orc-dead-body)
+    (:Unit :unitId 93 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 0 :LocX 38 :LocY 36 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 9 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 93 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 93 :Type 15 :UnitTypeString unit-orc-dead-body)
+    (:Unit :unitId 92 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 0 :LocX 45 :LocY 44 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 9 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 92 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 92 :Type 15 :UnitTypeString unit-orc-dead-body)
+    (:Unit :unitId 95 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 0 :LocX 39 :LocY 36 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 9 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 95 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 95 :Type 15 :UnitTypeString unit-orc-dead-body)
+    (:Unit :unitId 94 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 0 :LocX 46 :LocY 43 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 9 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 94 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 94 :Type 15 :UnitTypeString unit-orc-dead-body)
+    (:Unit :unitId 96 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 0 :LocX 45 :LocY 44 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 9 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 96 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 96 :Type 15 :UnitTypeString unit-orc-dead-body)
+    (:Unit :unitId 97 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 0 :LocX 38 :LocY 36 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 9 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 97 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 97 :Type 15 :UnitTypeString unit-orc-dead-body)
+    (:Unit :unitId 98 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 0 :LocX 47 :LocY 44 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 9 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 98 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 98 :Type 15 :UnitTypeString unit-orc-dead-body)
+    (:Unit :unitId 99 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 0 :LocX 38 :LocY 37 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 9 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 99 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 99 :Type 15 :UnitTypeString unit-orc-dead-body)
+    (:Unit :unitId 100 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 60 :LocX 8 :LocY 11 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 100 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 23 :UnitTypeString unit-footman)
+    (:Unit :unitId 101 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 28 :LocX 45 :LocY 18 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 0 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 101 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 101 :Type 23 :UnitTypeString unit-footman)
+    (:Unit :unitId 102 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 0 :LocX 49 :LocY 20 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 9 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 102 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 102 :Type 15 :UnitTypeString unit-orc-dead-body)
+    (:Unit :unitId 103 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 60 :LocX 49 :LocY 10 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 103 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 103 :Type 23 :UnitTypeString unit-footman)
+    (:Unit :unitId 104 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 60 :LocX 8 :LocY 10 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 104 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 23 :UnitTypeString unit-footman)
+    (:Unit :unitId 105 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 0 :LocX 43 :LocY 15 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 9 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 105 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 105 :Type 15 :UnitTypeString unit-orc-dead-body)
+    (:Unit :unitId 106 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 60 :LocX 7 :LocY 8 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 106 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 23 :UnitTypeString unit-footman)
+    (:Unit :unitId 107 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 0 :LocX 44 :LocY 17 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 9 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 107 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 107 :Type 15 :UnitTypeString unit-orc-dead-body)
+    (:Unit :unitId 108 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 40 :LocX 6 :LocY 8 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 108 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 28 :UnitTypeString unit-archer)
+    (:Unit :unitId 109 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 0 :LocX 48 :LocY 12 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 9 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 109 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 109 :Type 15 :UnitTypeString unit-orc-dead-body)
+    (:Unit :unitId 110 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 40 :LocX 5 :LocY 8 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 110 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 28 :UnitTypeString unit-archer)
+    (:Unit :unitId 111 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 0 :LocX 49 :LocY 12 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 9 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 111 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 111 :Type 15 :UnitTypeString unit-orc-dead-body)
+    (:Unit :unitId 113 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 60 :LocX 49 :LocY 11 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 113 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 113 :Type 23 :UnitTypeString unit-footman)
+    (:Unit :unitId 112 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 60 :LocX 4 :LocY 8 :Armor 0 :Damage 0 :PiercingDmg 0 :Status 1 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg1 112 :Armor 0 :Damage 0 :PiercingDmg 0 :StatusArg2 -1 :Type 23 :UnitTypeString unit-footman)
+  )
+)

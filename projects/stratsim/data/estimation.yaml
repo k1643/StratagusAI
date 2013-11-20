@@ -1,0 +1,8 @@
+!!orst.stratagusai.stratsim.analysis.ProductionEstimation
+requirements:
+  "unit-human-oil-tanker":
+    preconditions: !!set
+      ? {preconditions: null, time: 20, type: "unit-human-shipyard"}
+      : null
+    time: 10
+    type: "unit-human-oil-tanker"

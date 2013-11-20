@@ -1,0 +1,190 @@
+
+Expressing Common Strategy using the Strategy Grammar
+
+
+The learning group has identified five different Wargus stratagies, and 
+they have tools to do automatic labeling of these strategies.  Here we 
+express these five strategies using the PPRL strategy language.  The strategies
+are given for a player 0 on the one-way-in-one-way-out map.
+
+1. Rush
+
+Goal: to destroy the opponent's economy early.  
+
+Counter Strategy: Power Peasant - building more peasants to 
+defend and recover from attack. 
+
+A heuristic for identifying a rush is that a barracks is built before having
+12 peasants.
+
+The range of numbers of footmen and archers should be generated to test 
+different rushes.
+
+# player 0 attacks region 11
+# 
+(:strategy rush-0
+  (:task produce1 ((:units unit-footman 3 unit-archer 1))
+    :type produce
+    :end(:trigger (start attack2) (start produce3))
+  )
+  # attack enemy base region 11
+  (:task attack2 ((:units unit-footman 10)(:region 11))
+    :type attack
+  )
+  # produce defense units for base
+  (:task produce3 ((:units unit-footman 10))
+    :type produce
+    :end(:trigger (start attack4))
+  )
+  # defend home base region 1
+  (:task attack4 ((:units unit-footman 10)(:region 1))
+    :type attack
+  )
+)
+
+2. Proximity Rush (a.k.a. Proxi Rush)
+
+Goal: to destroy the opponent's economy early.  
+
+Counter Strategy: Power Peasant - building more peasants to 
+defend and recover from attack. 
+
+The Proximity Rush differs from a Rush in that buildings that produce combat
+units are built near the enemy.  This allows combat units to reach the enemy
+faster at the risk of having the building destroyed before the units can be
+sent to attack.
+
+# player 0 attacks region 11
+# 
+(:strategy proxi-rush-0
+  # build barracks in region 10
+  (:task produce1 ((:units unit-barracks 1)(:region 10))
+    :type produce
+    :end(:trigger (start produce2))
+  )
+  # train footmen in region 10
+  (:task produce2 ((:units unit-footman 3)(:region 10))
+    :type produce
+    :end(:trigger (start attack3) (start produce4))
+  )
+  # defend the barracks
+  (:task produce4 ((:units unit-footman 3))
+    :type produce
+    :end(:trigger (start attack7))
+  )
+  # defend the barracks in region 10
+  (:task attack7 ((:units unit-footman 3)(:region 11))
+    :type attack
+  )
+  # attack enemy base region 11
+  (:task attack3 ((:units unit-footman 3)(:region 11))
+    :type attack
+  )
+  # produce defense units for base
+  (:task produce5 ((:units unit-footman 10)(:region 1))
+    :type produce
+    :end(:trigger (start attack6))
+  )
+  # defend home base region 1
+  (:task attack6 ((:units unit-footman 10)(:region 1)) 
+    :type attack
+  )
+)
+
+3. Fast Expansion
+
+Goal: rapidly build production capacty.  This is done by building multiple 
+townhalls.
+
+Counter Strategy: Rush
+
+Open map vs. Choke Map is an issue for deciding to do a fast expansion.
+
+Build townhalls near gold mines?
+
+# player 0 attacks region 11
+# 
+# this fast expansion strategy places 3 town halls in regions 1 and 4.  The
+# strategy has 3 duplicate trees.
+#
+(:strategy fast-expansion-0
+  # build town hall in region 1 near goldmine
+  (:task produce1 ((:units unit-town-hall 1)(:region 1))
+    :type produce
+    :end(:trigger (start produce2))
+  )
+  # train footmen in region 1
+  (:task produce2 ((:units unit-footman 3)(:region 1))
+    :type produce
+    :end(:trigger (start attack3) (start produce4))
+  )
+  # attack enemy base region 11
+  (:task attack3 ((:units unit-footman 3)(:region 11))
+    :type attack
+  )
+  # defend the town hall
+  (:task produce4 ((:units unit-footman 3)(:region 11))
+    :type produce
+    :end(:trigger (start attack5))
+  )
+  # defend the town hall
+  (:task attack5 ((:units unit-footman 3)(:region 11))
+    :type attack
+  )
+  # second copy.  Build another town hall in region 1.
+  #
+  # build town hall in region 1 near goldmine
+  (:task produce6 ((:units unit-town-hall 1)(:region 1)) 
+    :type produce
+    :end(:trigger (start produce7))
+  )
+  # train footmen in region 1
+  (:task produce7 ((:units unit-footman 3)(:region 1))
+    :type produce
+    :end(:trigger (start attack8) (start produce9))
+  )
+  # attack enemy base region 11
+  (:task attack8 ((:units unit-footman 3)(:region 11))
+    :type attack
+  )
+  # defend the town hall
+  (:task produce9 ((:units unit-footman 3)(:region 11))
+    :type produce
+    :end(:trigger (start attack5))
+  )
+  # defend the town hall
+  (:task attack10 ((:units unit-footman 3)(:region 11))
+    :type attack
+  )
+  # third copy.  Build another town hall in region 4.
+  #
+  # build town hall in region 3 near goldmine
+  (:task produce11 ((:units unit-town-hall 1)(:region 3))
+    :type produce
+    :end(:trigger (start produce12))
+  )
+  # train footmen in region 3
+  (:task produce12 ((:units unit-footman 3)(:region 3))
+    :type produce
+    :end(:trigger (start attack13) (start produce14))
+  )
+  # attack enemy base region 11
+  (:task attack13 ((:units unit-footman 3)(:region 11))
+    :type attack
+  )
+  # defend the town hall
+  (:task produce14 ((:units unit-footman 3)(:region 3))
+    :type produce
+    :end(:trigger (start attack5))
+  )
+  # defend the town hall
+  (:task attack14 ((:units unit-footman 3)(:region 3))
+    :type attack
+  )
+)
+
+
+Sub-strategies
+
+Sub-strategies can be used as part of a strategy.  An example of a sub-strategy
+is building a wall of farms to protect a town hall.

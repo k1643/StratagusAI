@@ -1,0 +1,19 @@
+(:plan rush_10_0 :player 0
+  (:group-spec 1 :type group-building unit-peasant 1)
+  (:group-spec 6 :type group-combat unit-archer 2 unit-footman 8)
+  (:task init-group1 ((:group 1))
+    :type init-group
+    :end (:trigger (start produce1))
+  )
+  (:task produce1 ((:group 6))
+    # produce new group
+    :type produce
+    :using 1
+    :end (:trigger (start secure2))
+  )
+  (:task secure2 ((:region 7))
+    # Control enemy base in region 7
+    :type secure
+    :using 6
+  )
+)

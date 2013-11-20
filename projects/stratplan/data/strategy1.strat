@@ -1,0 +1,18 @@
+#
+# test case for StrategyReaderTest
+#
+(:plan s1 :player 0
+    (:group-spec 1 :type group-combat unit-footman 10)
+    (:task produce1 ((:group 1))
+      :type produce
+      :start (:trigger (start defend1))
+      :end (:trigger (start attack1)
+                     (end defend1))
+    )
+    (:task defend1 ((:group 1) (:region 1))
+      :type defend
+    )
+    (:task attack1 ((:group 1) (:region 2))
+      :type attack
+    )
+)

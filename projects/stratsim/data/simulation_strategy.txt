@@ -1,0 +1,60 @@
+(:plan dfnd-atk_7_1 :player 1
+  (:group-spec 1 :type group-building unit-elven-lumber-mill 1 unit-town-hall 1 unit-farm 7 unit-human-barracks 1 unit-peasant 1)
+  (:group-spec 2 :type group-building unit-town-hall 1 unit-farm 7 unit-elven-lumber-mill 1 unit-human-barracks 1 unit-peasant 1)
+  (:group-spec 3 :type group-combat unit-archer 2 unit-footman 5)
+  (:group-spec 4 :type group-combat unit-archer 2 unit-footman 5)
+  (:group-spec 5 :type group-combat unit-archer 2 unit-footman 5)
+  (:group-spec 6 :type group-combat unit-archer 2 unit-footman 5)
+  (:task init-group1 ((:group 1))
+    :type init-group
+    :end (:trigger (start produce1))
+  )
+  (:task init-group2 ((:group 2))
+    :type init-group
+    :end (:trigger (start produce3))
+  )
+  (:task produce1 ((:group 3))
+    # produce new group
+    :type produce
+    :using 1
+    :end (:trigger (start secure2)(start produce7))
+  )
+  (:task secure2 ((:region 7))
+    # Control allied base in region 7
+    :type secure
+    :using 3
+  )
+  (:task produce3 ((:group 4))
+    # produce new group
+    :type produce
+    :using 2
+    :end (:trigger (start secure4)(start produce5))
+  )
+  (:task secure4 ((:region 8))
+    # Control allied base in region 8
+    :type secure
+    :using 4
+  )
+  (:task produce5 ((:group 5))
+    # produce new group
+    :type produce
+    :using 2
+    :end (:trigger (start secure6))
+  )
+  (:task secure6 ((:region 1))
+    # Control enemy base in region 1
+    :type secure
+    :using 5
+  )
+  (:task produce7 ((:group 6))
+    # produce new group
+    :type produce
+    :using 1
+    :end (:trigger (start secure8))
+  )
+  (:task secure8 ((:region 2))
+    # Control enemy base in region 2
+    :type secure
+    :using 6
+  )
+)

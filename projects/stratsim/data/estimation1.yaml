@@ -1,0 +1,14 @@
+!!orst.stratagusai.stratsim.analysis.ProductionEstimation
+requirements:
+  unit-oil-tanker:
+    preconditions: !!set
+      ? &id001
+        preconditions: !!set {}
+        producer: null
+        time: 20
+        type: unit-shipyard
+      : null
+    producer: null
+    time: 10
+    type: unit-oil-tanker
+  unit-shipyard: *id001

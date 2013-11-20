@@ -1,0 +1,94 @@
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <parent>
+        <groupId>orst.stratagusai</groupId>
+        <artifactId>stratctlr</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../stratctlr/pom.xml</relativePath>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>orst.stratagusai</groupId>
+    <artifactId>stratplan</artifactId>
+    <version>2.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>stratplan</name>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.antlr</groupId>
+                <artifactId>antlr3-maven-plugin</artifactId>
+                <version>${antlrPluginVersion}</version>
+                <executions>
+                    <execution>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>antlr</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+  <reporting>
+    <plugins>
+      <plugin>
+        <!-- lines of code and test coverage report generated for "mvn site" -->
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>cobertura-maven-plugin</artifactId>
+        <version>2.4</version>
+      </plugin>
+    </plugins>
+  </reporting>
+
+    <dependencies>
+        <dependency>
+            <!-- stratagus socket protocol -->
+            <groupId>orst.stratagusai</groupId>
+            <artifactId>stratagusai-client</artifactId>
+            <version>${clientVersion}</version>
+        </dependency>
+        
+        <dependency>
+            <!-- graph classes and algorithms -->
+            <groupId>net.sf.jung</groupId>
+            <artifactId>jung-api</artifactId>
+            <version>${jungVersion}</version>
+        </dependency>
+        <dependency>
+            <!-- graph classes and algorithms -->
+            <groupId>net.sf.jung</groupId>
+            <artifactId>jung-graph-impl</artifactId>
+            <version>${jungVersion}</version>
+        </dependency>
+        <dependency>
+            <!-- shortest-path algorithm -->
+            <groupId>net.sf.jung</groupId>
+            <artifactId>jung-algorithms</artifactId>
+            <version>${jungVersion}</version>
+        </dependency>
+        <dependency>
+            <!-- ANTLR lexer,parser, and AST traversal -->
+            <groupId>org.antlr</groupId>
+            <artifactId>antlr-runtime</artifactId>
+            <version>${antlrVersion}</version>
+        </dependency>
+            <!-- for setting object properties using introspection. -->
+            <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+            <version>1.8.3</version>
+        </dependency>
+
+    </dependencies>
+    
+</project>

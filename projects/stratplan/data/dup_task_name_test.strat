@@ -1,0 +1,14 @@
+#
+# test case for duplicate task names
+#
+(:plan s1 :player 0
+    (:group-spec 1 :type group-combat unit-footman 9)
+    (:task defend1 ((:region 1))
+      :type defend
+      :using 1
+    )
+    (:task defend1 ((:region 1))
+      :type defend
+      :using 1
+    )
+)

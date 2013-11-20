@@ -1,0 +1,152 @@
+(:GameState 
+  :cycle 0
+  :gold 0
+  :oil 0
+  :wood 0
+  (:GameMap 
+    (:cells 
+      '0000000000TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT'
+      '0000000000TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT'
+      '0000000000TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT'
+      '0000000000TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT'
+      '0000000000TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT'
+      '0000000000TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT'
+      '0000000000TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT'
+      '0000000000TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT'
+      '0000000000TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT'
+      '0000000000TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT'
+      '0000000000000000000000000000000000000000000000000000000000000000'
+      '0000000000000000000000000000000000000000000000000000000000000000'
+      '0000000000000000000000000000000000000000000000000000000000000000'
+      '0000000000000000000000000000000000000000000000000000000000000000'
+      '0000000000000000000000000000000000000000000000000000000000000000'
+      '0000000000000000000000000000000000000000000#####################'
+      '0000000000000000000000000000000000000000000#####################'
+      '0000000000000000000000000000000000000000000#####################'
+      '0000000000000000000000000000000000000000000#####################'
+      '0000000000000000000000000000000000000000000#####################'
+      '0000000000#########################00000000#####################'
+      '0000000000#########################00000000#####################'
+      '0000000000#########################00000000#####################'
+      '0000000000#########################00000000#####################'
+      '0000000000#########################00000000#####################'
+      '###################################00000000#####################'
+      '###################################00000000#####################'
+      '###################################00000000#####################'
+      '###################################00000000#####################'
+      '###################################00000000#####################'
+      '###############0000000000000000000000000000#####################'
+      '###############0000000000000000000000000000#####################'
+      '###############0000000000000000000000000000#####################'
+      '###############0000000000000000000000000000#####################'
+      '###############0000000000000000000000000000#####################'
+      '0000000000000000000000000000000000000000000#####################'
+      '0000000000000000000000000000000000000000000#####################'
+      '0000000000000000000000000000000000000000000#####################'
+      '0000000000000000000000000000000000000000000#####################'
+      '0000000000000000000000000000000000000000000#####################'
+      '0000000000000000000000000000000000000000000000000000000000000000'
+      '0000000000000000000000000000000000000000000000000000000000000000'
+      '0000000000000000000000000000000000000000000000000000000000000000'
+      '0000000000000000000000000000000000000000000000000000000000000000'
+      '0000000000000000000000000000000000000000000000000000000000000000'
+      '0000000000000000000000000000000000000000000000000000000000000000'
+      '0000000000000000000000000000000000000000000000000000000000000000'
+      '0000000000000000000000000000000000000000000000000000000000000000'
+      '0000000000000000000000000000000000000000000000000000000000000000'
+      '0000000000000000000000000000000000000000000000000000000000000000'
+      '0000000000000000000000000000000000000000000000000000000000000000'
+      '0000000000000000000000000000000000000000000000000000000000000000'
+      '0000000000000000000000000000000000000000000000000000000000000000'
+      '0000000000000000000000000000000000000000000000000000000000000000'
+      '0000000000000000000000000000000000000000000000000000000000000000'
+      '00000000000000000000TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT'
+      '00000000000000000000TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT'
+      '00000000000000000000TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT'
+      '00000000000000000000TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT'
+      '00000000000000000000TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT'
+      'TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT'
+      'TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT'
+      'TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT'
+      'TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT'
+    )
+    (:Region :id 13 :minX 0 :extentX 20 :minY 55 :extentY 5)
+    (:Region :id 3 :minX 10 :extentX 33 :minY 10 :extentY 10)
+    (:Region :id 14 :minX 20 :extentX 45 :minY 55 :extentY 10)
+    (:Region :id 10 :minX 15 :extentX 28 :minY 30 :extentY 25)
+    (:Region :id 6 :minX 10 :extentX 5 :minY 20 :extentY 5)
+    (:Region :id 8 :minX 35 :extentX 8 :minY 20 :extentY 10)
+    (:Region :id 7 :minX 15 :extentX 20 :minY 20 :extentY 10)
+    (:Region :id 12 :minX 43 :extentX 22 :minY 40 :extentY 15)
+    (:Region :id 2 :minX 10 :extentX 55 :minY 0 :extentY 10)
+    (:Region :id 11 :minX 0 :extentX 15 :minY 35 :extentY 20)
+    (:Region :id 1 :minX 0 :extentX 10 :minY 0 :extentY 25)
+    (:Region :id 15 :minX 0 :extentX 20 :minY 60 :extentY 5)
+    (:Region :id 4 :minX 43 :extentX 22 :minY 10 :extentY 5)
+    (:Region :id 9 :minX 0 :extentX 15 :minY 25 :extentY 10)
+    (:Region :id 5 :minX 43 :extentX 22 :minY 15 :extentY 25)
+    (:connections
+      (:RegionNode :region 1)
+      (:RegionNode :region 12)
+      (:RegionNode :region 3)
+      (:PassageNode :id 1)
+      (:RegionNode :region 8)
+      (:RegionNode :region 10)
+      (:PassageNode :id 6)
+      (:PassageNode :id 5)
+      (:PassageNode :id 7)
+      (:PassageNode :id 2)
+      (:PassageNode :id 4)
+      (:PassageNode :id 3)
+      (:RegionNode :region 11)
+      (:RegionNode :region 4)
+      (:RegionNode :region 13)
+      (:Passage :regionNode 10 :passageNode 6 :extent 16)
+      (:Passage :regionNode 1 :passageNode 1 :extent 5)
+      (:Passage :regionNode 3 :passageNode 1 :extent 25)
+      (:Passage :regionNode 4 :passageNode 2 :extent 10)
+      (:Passage :regionNode 12 :passageNode 6 :extent 10)
+      (:Passage :regionNode 8 :passageNode 4 :extent 5)
+      (:Passage :regionNode 13 :passageNode 7 :extent 11)
+      (:Passage :regionNode 10 :passageNode 5 :extent 15)
+      (:Passage :regionNode 10 :passageNode 7 :extent 22)
+      (:Passage :regionNode 3 :passageNode 3 :extent 8)
+      (:Passage :regionNode 11 :passageNode 5 :extent 8)
+      (:Passage :regionNode 10 :passageNode 4 :extent 15)
+      (:Passage :regionNode 8 :passageNode 3 :extent 5)
+      (:Passage :regionNode 3 :passageNode 2 :extent 11)
+    )
+  )
+  (:units 
+    (:Unit :unitId 0 :ownerId 15 :RAmount 40000 :CurrentTarget -1 :HitPoints 25500 :LocX 0 :LocY 2 :Status 1 :StatusArg1 0 :StatusArg2 -1 :Type 11 :UnitTypeString unit-gold-mine)
+    (:Unit :unitId 1 :ownerId 15 :RAmount 40000 :CurrentTarget -1 :HitPoints 25500 :LocX 5 :LocY 54 :Status 1 :StatusArg1 1 :StatusArg2 -1 :Type 11 :UnitTypeString unit-gold-mine)
+    (:Unit :unitId 2 :ownerId 15 :RAmount 30000 :CurrentTarget -1 :HitPoints 25500 :LocX 61 :LocY 10 :Status 1 :StatusArg1 2 :StatusArg2 -1 :Type 11 :UnitTypeString unit-gold-mine)
+    (:Unit :unitId 3 :ownerId 15 :RAmount 55000 :CurrentTarget -1 :HitPoints 25500 :LocX 3 :LocY 22 :Status 1 :StatusArg1 3 :StatusArg2 -1 :Type 11 :UnitTypeString unit-gold-mine)
+    (:Unit :unitId 4 :ownerId 15 :RAmount 55000 :CurrentTarget -1 :HitPoints 25500 :LocX 21 :LocY 33 :Status 1 :StatusArg1 4 :StatusArg2 -1 :Type 11 :UnitTypeString unit-gold-mine)
+    (:Unit :unitId 5 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 60 :LocX 11 :LocY 54 :Status 1 :StatusArg1 5 :StatusArg2 -1 :Type 23 :UnitTypeString unit-footman)
+    (:Unit :unitId 6 :ownerId 15 :RAmount 30000 :CurrentTarget -1 :HitPoints 25500 :LocX 61 :LocY 50 :Status 1 :StatusArg1 6 :StatusArg2 -1 :Type 11 :UnitTypeString unit-gold-mine)
+    (:Unit :unitId 7 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 60 :LocX 4 :LocY 7 :Status 1 :StatusArg1 7 :StatusArg2 -1 :Type 23 :UnitTypeString unit-footman)
+    (:Unit :unitId 8 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 60 :LocX 4 :LocY 8 :Status 1 :StatusArg1 8 :StatusArg2 -1 :Type 23 :UnitTypeString unit-footman)
+    (:Unit :unitId 9 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 60 :LocX 4 :LocY 9 :Status 1 :StatusArg1 9 :StatusArg2 -1 :Type 23 :UnitTypeString unit-footman)
+    (:Unit :unitId 10 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 60 :LocX 5 :LocY 7 :Status 1 :StatusArg1 10 :StatusArg2 -1 :Type 23 :UnitTypeString unit-footman)
+    (:Unit :unitId 11 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 60 :LocX 5 :LocY 8 :Status 1 :StatusArg1 11 :StatusArg2 -1 :Type 23 :UnitTypeString unit-footman)
+    (:Unit :unitId 12 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 60 :LocX 5 :LocY 9 :Status 1 :StatusArg1 12 :StatusArg2 -1 :Type 23 :UnitTypeString unit-footman)
+    (:Unit :unitId 13 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 60 :LocX 57 :LocY 11 :Status 1 :StatusArg1 13 :StatusArg2 -1 :Type 23 :UnitTypeString unit-footman)
+    (:Unit :unitId 14 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 60 :LocX 57 :LocY 12 :Status 1 :StatusArg1 14 :StatusArg2 -1 :Type 23 :UnitTypeString unit-footman)
+    (:Unit :unitId 15 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 60 :LocX 57 :LocY 13 :Status 1 :StatusArg1 15 :StatusArg2 -1 :Type 23 :UnitTypeString unit-footman)
+    (:Unit :unitId 17 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 60 :LocX 58 :LocY 12 :Status 1 :StatusArg1 17 :StatusArg2 -1 :Type 23 :UnitTypeString unit-footman)
+    (:Unit :unitId 16 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 60 :LocX 58 :LocY 13 :Status 1 :StatusArg1 16 :StatusArg2 -1 :Type 23 :UnitTypeString unit-footman)
+    (:Unit :unitId 19 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 60 :LocX 57 :LocY 48 :Status 1 :StatusArg1 19 :StatusArg2 -1 :Type 23 :UnitTypeString unit-footman)
+    (:Unit :unitId 18 :ownerId 0 :RAmount 0 :CurrentTarget -1 :HitPoints 60 :LocX 58 :LocY 11 :Status 1 :StatusArg1 18 :StatusArg2 -1 :Type 23 :UnitTypeString unit-footman)
+    (:Unit :unitId 21 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 60 :LocX 57 :LocY 50 :Status 1 :StatusArg1 21 :StatusArg2 -1 :Type 23 :UnitTypeString unit-footman)
+    (:Unit :unitId 20 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 60 :LocX 57 :LocY 49 :Status 1 :StatusArg1 20 :StatusArg2 -1 :Type 23 :UnitTypeString unit-footman)
+    (:Unit :unitId 23 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 60 :LocX 58 :LocY 49 :Status 1 :StatusArg1 23 :StatusArg2 -1 :Type 23 :UnitTypeString unit-footman)
+    (:Unit :unitId 22 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 60 :LocX 58 :LocY 50 :Status 1 :StatusArg1 22 :StatusArg2 -1 :Type 23 :UnitTypeString unit-footman)
+    (:Unit :unitId 25 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 60 :LocX 10 :LocY 54 :Status 1 :StatusArg1 25 :StatusArg2 -1 :Type 23 :UnitTypeString unit-footman)
+    (:Unit :unitId 24 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 60 :LocX 58 :LocY 48 :Status 1 :StatusArg1 24 :StatusArg2 -1 :Type 23 :UnitTypeString unit-footman)
+    (:Unit :unitId 27 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 60 :LocX 10 :LocY 52 :Status 1 :StatusArg1 27 :StatusArg2 -1 :Type 23 :UnitTypeString unit-footman)
+    (:Unit :unitId 26 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 60 :LocX 10 :LocY 53 :Status 1 :StatusArg1 26 :StatusArg2 -1 :Type 23 :UnitTypeString unit-footman)
+    (:Unit :unitId 29 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 60 :LocX 11 :LocY 53 :Status 1 :StatusArg1 29 :StatusArg2 -1 :Type 23 :UnitTypeString unit-footman)
+    (:Unit :unitId 28 :ownerId 1 :RAmount 0 :CurrentTarget -1 :HitPoints 60 :LocX 11 :LocY 52 :Status 1 :StatusArg1 28 :StatusArg2 -1 :Type 23 :UnitTypeString unit-footman)
+  )
+)
