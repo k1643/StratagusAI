@@ -1,0 +1,5 @@
+-- Stratagus Map Presentation
+-- File generated automatically from pudconvert.
+
+DefinePlayerTypes("person","person")
+PresentMap("The Right Strategy", 2, 64, 64, 1)
