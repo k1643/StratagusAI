@@ -1,0 +1,77 @@
+!!orst.stratagusai.prodh.ProductionReqs
+requirements:
+  unit-town-hall: &id001
+    preconditions: !!set
+      ? &id002
+        preconditions: !!set
+          *id001: null
+        producer: null
+        time: 270
+        type: unit-peasant
+      : null
+    producer: unit-peasant
+    time: 1530
+    type: unit-town-hall
+  unit-farm:
+    preconditions: !!set
+      *id002: null
+    producer: unit-peasant
+    time: 400
+    type: unit-farm
+  unit-human-barracks: &id004
+    preconditions: !!set
+      *id002: null
+    producer: unit-peasant
+    time: 1200
+    type: unit-human-barracks
+  unit-elven-lumber-mill: &id007
+    preconditions: !!set {}
+    producer: unit-peasant
+    time: 900
+    type: unit-elven-lumber-mill
+  unit-human-blacksmith: &id005
+    preconditions: !!set
+      *id002: null
+    producer: unit-peasant
+    time: 1200
+    type: unit-human-blacksmith
+  unit-keep: &id003
+    preconditions: !!set
+      *id001: null
+    producer: unit-peasant
+    time: 1200
+    type: unit-keep
+  unit-stables: &id006
+    preconditions: !!set
+      *id003: null
+    producer: unit-peasant
+    time: 900
+    type: unit-stables
+  unit-footman:
+    preconditions: !!set
+      *id004: null
+    producer: unit-human-barracks
+    time: 360
+    type: unit-footman
+  unit-peasant: *id002
+  unit-ballista:
+    preconditions: !!set
+      *id004: null
+    producer: null
+    time: 1500
+    type: unit-ballista
+  unit-knight:
+    preconditions: !!set
+      *id004: null
+      *id005: null
+      *id006: null
+    producer: null
+    time: 540
+    type: unit-knight
+  unit-archer:
+    preconditions: !!set
+      *id004: null
+      *id007: null
+    producer: unit-human-barracks
+    time: 420
+    type: unit-archer
