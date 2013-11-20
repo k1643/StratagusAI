@@ -1,0 +1,16 @@
+# example configuration for client program.
+# This configuration file is in YAML format (http://yaml.org).
+# It defines a game of one HeuristicAgent player vs. the Stratagus AI.
+#
+!!orst.stratagusai.config.Config
+#goal: !!orst.stratagusai.NeverDoneGoal {}
+mapPaths: [../../maps/one_way_in_one_way_out_PvC.smp]
+agentConfigs:
+- !!orst.stratagusai.config.ControllerConfig
+  controllerClassName: orst.stratagusai.HeuristicAgent
+  params: !!map
+    planner: !!map
+      className: orst.stratagusai.fake.Planner
+      strategy: strategy.txt
+    tactical: orst.stratagusai.fake.TacticalManager
+    production: orst.stratagusai.fake.ProductionManager

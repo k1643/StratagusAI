@@ -1,0 +1,9 @@
+(  
+  (
+    ( 0 . #s(unit player-id 0 type 23 loc (2 15) hp 60 r-amt 0 kills 0 armor 0 dmg 0 piercing-dmg 0 status 1 status-args ()))
+    ( 1 . #s(unit player-id 0 type 23 loc (4 27) hp 60 r-amt 0 kills 0 armor 0 dmg 0 piercing-dmg 0 status 1 status-args ()))
+    ( 2 . #s(unit player-id 0 type 23 loc (3 18) hp 60 r-amt 0 kills 0 armor 0 dmg 0 piercing-dmg 0 status 1 status-args ()))
+  )
+   (:player :id 0 :gold 2000 :wood 1000 :oil 1000 :supply 0 :demand 5)
+)
+
