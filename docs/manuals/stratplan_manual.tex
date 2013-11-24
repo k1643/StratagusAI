@@ -37,6 +37,21 @@ mvn install:install-file -DgroupId=org.gnu.glpk \
          -Dpackaging=jar -Dfile=glpk-java.jar
 \end{verbatim}
 
+On Unbuntu, you can install GLPK with Java bindings by running
+
+\begin{verbatim}
+sudo apt-get install libglpk-java
+\end{verbatim}
+
+The JAR file will be at \verb+/usr/share/java/glpk-java-4.47.jar+, so the maven
+install command is
+
+\begin{verbatim}
+mvn install:install-file -DgroupId=org.gnu.glpk \
+      -DartifactId=glpk-java -Dversion=4.47 \
+      -Dpackaging=jar -Dfile=/usr/share/java/glpk-java-4.47.jar
+\end{verbatim}
+
 After the executable library and JAR are installed, you can include GLPK in a Java project with the following entry in the Maven \verb+pom.xml+ file:
 
 \begin{verbatim}

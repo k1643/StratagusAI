@@ -48,7 +48,7 @@
         <!-- linear program solver -->
         <groupId>org.gnu.glpk</groupId>
         <artifactId>glpk-java</artifactId>
-        <version>4.45</version>
+        <version>4.47</version>
     </dependency>
     <dependency>
         <!-- vectors and vector operations -->
