@@ -28,17 +28,17 @@ Maven is available at \url{http://http://maven.apache.org/download.html}.
 The tac-lp tactical combat module assigns combat units to targets by solving a linear program. The solver is GLPK (Gnu Linear Programming Kit),
 which is a binary executable that can be called from Java using a GLPK JAR.  The binary and the JAR have to be installed manually.
 
-GLPK can be found at \verb+http://ftp.gnu.org/gnu/glpk/+.  On Windows copy \verb+glpk_4_45.dll+ and \verb+glpk_4_45_java.dll+
+Pre-compiled binaries for Windows are available at \verb+http://sourceforge.net/projects/winglpk/+.  
+On Windows copy \verb+glpk_4_47.dll+ and \verb+glpk_4_47_java.dll+
 to \verb+C:\Windows\System32+. Install the Java JAR using
 
 \begin{verbatim}
 mvn install:install-file -DgroupId=org.gnu.glpk \
-         -DartifactId=glpk-java -Dversion=4.45 \
+         -DartifactId=glpk-java -Dversion=4.47 \
          -Dpackaging=jar -Dfile=glpk-java.jar
 \end{verbatim}
 
-On Unbuntu, you can install GLPK with Java bindings by running
-
+On Ubuntu, you can install GLPK with Java bindings by running
 \begin{verbatim}
 sudo apt-get install libglpk-java
 \end{verbatim}

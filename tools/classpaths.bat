@@ -33,7 +33,7 @@ SET CP=%CP%;%M2%\orst\stratagusai\stratsim\1.0-SNAPSHOT\stratsim-1.0-SNAPSHOT.ja
 REM matrix math and LP solver for tac-lp
 SET CP=%CP%;%M2%\orst\stratagusai\tac-lp\1.0-SNAPSHOT\tac-lp-1.0-SNAPSHOT.jar
 SET CP=%CP%;%M2%\org\apache\commons\commons-math\2.0\commons-math-2.0.jar
-SET CP=%CP%;%M2%\org\gnu\glpk\glpk-java\4.45\glpk-java-4.45.jar
+SET CP=%CP%;%M2%\org\gnu\glpk\glpk-java\4.47\glpk-java-4.47.jar
 
 REM TODO: all these dependencies drawn in by BeanUtils might not be worth it.
 REM BeanUtils used in GameStateEval.g to set properties.
